@@ -10,8 +10,8 @@ const Footer = () => {
   const year = date.getFullYear()
   return (
     <div className="text-white  ">
-      <div className="flex justify-between ">
-        <ul className="flex gap-4 mx-4">
+      <div className="flex justify-between md:flex-row flex-col">
+        <ul className="flex md:gap-4 flex-col md:flex-row mx-auto text-center md:text-end  md:mx-4">
           <li>About</li>
           <li>Testimonial</li>
           <li>Gallery</li>
@@ -19,7 +19,7 @@ const Footer = () => {
           <li>Partner With Us</li>
         </ul>
         <div className="justify-end mx-6">
-          <p>Join the Conversation</p>
+          <p className="flex justify-center">Join the Conversation</p>
           <div className="flex justify-evenly">
             <FaSquareXTwitter />
             <FaFacebook />
@@ -28,9 +28,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#0A1437] flex items-center justify-between ">
-        <Image src={Logo1} className="p-8" />
-        <div className="flex gap-4 ">
+      <div className="bg-[#0A1437] flex flex-col md:flex-row gap-3 px-3 items-center justify-between ">
+        <Image src={Logo1} className="p-8 md:w-auto w-36 " />
+        <div className="flex md:gap-4 ">
           <ul className="flex gap-4">
             <li>Game</li>
             <li>Library</li>
@@ -42,7 +42,7 @@ const Footer = () => {
          
         </div>
         <div className="mx-5 ">
-            <select className="select select-primary w-full max-w-xs ml-auto mx-4">
+            <select className="select select-primary md:w-full w-screen max-w-xs ml-auto mx-4">
               <option disabled selected>
                 Language
               </option>
@@ -55,7 +55,7 @@ const Footer = () => {
             </select>
           </div>
       </div>
-      <div className=" mx-auto font-extralight text-sm  w-[50%] my-20">
+      <div className=" mx-auto font-extralight text-sm px-2  md:w-[50%] my-20">
         <ul className="flex justify-left gap-6 my-2 mx-auto ">
           <li>Legal & Privacy</li>
           <li>User Agreement</li>
